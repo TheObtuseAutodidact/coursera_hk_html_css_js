@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Assignment 1</title>
+    <link rel="stylesheet" href="/css/stylesheet.css">
+  </head>
+  <body>
+    <h1>Please Enter Your Details For Our Dating Website!</h1>
+    <section>
+      <form action="http://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="post">
+
+      <fieldset>
+        <legend> Your Face</legend>
+        <label for="avatar">Your image: </label>
+        <input type="file" name="avatar" id='avatar' required></br>
+
+        <label for="preview">Image Preview: </label>
+        <img id='preview'>
+
+      </fieldset>
+
+      <fieldset>
+        <legend>Your General Details</legend>
+        <label for="username">Name:</label>
+        <input type="text" name="username" id='username' required></br>
+
+        <label for="gender">Gender:</label>
+        <input class='check_or_radio' type="radio" name="gender" value="Male" id='male' required><span id="male">Male</span>
+        <input class='check_or_radio' type="radio" name="gender" value="Female" id='female' required><span id="female">Female</span></br>
+
+        <label for="age">Age:</label>
+        <input type="number" name="age" id='age' required></br>
+
+        <label for="dob">Date of birth:</label>
+        <input type="date" name="dob" id='dob'></br>
+
+        <label for="fav_color">Favorite Color:</label>
+        <input type="color" name="fav_color" id='fav_color'></br>
+
+        <label for="country">Which Country:</label>
+        <select id='country'>
+          <option value='Narnia'>Narnia</option>
+          <option value='Middle Earth'>Middle Earth</option>
+          <option value='New Freeland'>New Freeland</option>
+          <option value='Atlantis'>Atlantis</option>
+          <option value='Fairy'>Fairy</option>
+          <option value='Canada'>Canada</option>
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Indicators</legend>
+        <label for="height">Height:</label>
+        <span class='low' id='short'>Short</span><input id='height' type="range" min='0' max='100' name="height"><span class='high' id='tall'>Tall</span></br>
+        <label for="salary">Salary:</label>
+        <span class= 'low' id='poor'>Poor</span><input id='salary' type="range" min='0' max='100' name="salary"><span class='high' id='rich'>Rich</span>
+      </fieldset>
+
+      <fieldset>
+        <legend>Your Contact Information</legend>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id='email' required></br>
+
+        <label for="mobile">Mobile:</label>
+        <input type="tel" name="mobile" id='mobile'></br>
+
+        <label for="address">Address:</label>
+        <textarea type="text" name="address" id='address'></textarea></br>
+
+        <label for="contact">Method to contact you:</label>
+        <input class='check_or_radio' type="checkbox" name="email" value="email" id='click_email'><span id="click_email">Email</span>
+        <input class='check_or_radio' type="checkbox" name="whatsapp" value="whatsapp" id='whatsapp'><span id="whatsapp">Whatsapp</span>
+        <input class='check_or_radio' type="checkbox" name="inappchat" value="inappchat" id='inappchat'><span id="inappchat">In-app chat</span>
+
+
+
+      </fieldset></br>
+        <input type="submit"  value="Submit">
+    </form>
+    </section>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+  </body>
+</html>
