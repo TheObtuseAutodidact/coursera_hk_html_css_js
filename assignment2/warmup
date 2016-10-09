@@ -1,0 +1,23 @@
+var num = Math.floor(Math.random() * 100 + 1);
+var total_guesses = 0;
+var guess;
+
+do {
+  guess = prompt("Guess a number between 1 and 100.")
+  total_guesses += 1
+  if (guess == num) {
+    alert("You win! The number was " +
+            num +
+            "\nYou took " +
+            total_guesses +
+            " to get the answer!")
+  }
+  else {
+    if (guess > num) {
+      alert("Too high! Try again.")
+    }
+    else {
+      alert("Too low! Try again.")
+    }
+  }
+} while (guess != num)
